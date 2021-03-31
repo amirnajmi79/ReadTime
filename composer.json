@@ -8,6 +8,7 @@
             "email": "amirmo.naj@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "homepage": "https://github.com/amirnajmi79/readtime",
     "keywords": ["Laravel", "ReadTime"],
     "require": {
