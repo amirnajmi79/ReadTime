@@ -17,16 +17,16 @@ class ReadTime
     /*
      * Separate words
      */
-    public function splitWords(): array
+    private function splitWords(): array
     {
         return preg_split("/[\s,]+/", "$this->content");
     }
     /*
      * Calculate the number of words
      */
-    public function calculateWords(): int
+    private function calculateWords(): int
     {
-        return count(ReadTime::splitWords());
+        return count($this->splitWords());
     }
     /*
      * Calculate minutes
@@ -34,8 +34,8 @@ class ReadTime
      */
     public function calculateMinutes(): int
     {
-        if (ReadTime::calculateWords()/200 < 1)
+        if ($this->calculateWords()/200 < 1)
             return 1;
-        return (ReadTime::calculateWords()/200);
+        return ($this->calculateWords()/200);
     }
 }
