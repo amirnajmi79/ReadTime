@@ -1,0 +1,37 @@
+{
+    "name": "amirnajmi/readtime",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amirnajmi",
+            "email": "amirmo.naj@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/amirnajmi79/readtime",
+    "keywords": ["Laravel", "ReadTime"],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "AmirNajmi\\ReadTime\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AmirNajmi\\ReadTime\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmirNajmi\\ReadTime\\ReadTimeServiceProvider"
+            ],
+            "aliases": {
+                "ReadTime": "AmirNajmi\\ReadTime\\Facades\\ReadTime"
+            }
+        }
+    }
+}
