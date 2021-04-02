@@ -5,7 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+A PHP package to show users how long it takes to read content.
 
 ## Installation
 
@@ -15,7 +15,18 @@ Via Composer
 $ composer require amirnajmi/readtime
 ```
 
-## Usage
+## Quick start
+
+### Using the class
+
+Here is an example of the most basic usage:
+
+```php
+use AmirNajmi\ReadTime\ReadTime;
+
+$readTime = (new ReadTime($content))->calculateMinutes();
+
+```
 
 
 
